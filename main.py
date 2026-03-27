@@ -94,6 +94,7 @@ plt.bar(tfame2["Y"], tfame2["Am_lst_6"])
 plt.savefig("chart12.png")
 
 # 1 задание
+print("Секретные ключи")
 import os
 S1_LYSENKOVA = os.environ["S1_LYSENKOVA"]
 print(S1_LYSENKOVA)
@@ -107,4 +108,5 @@ print(S3_LYSENKOVA)
 #Задание 3: 
 #Задание 4: выполняла с Лысенковой М., все ответы правильные, оценка 5
 #Задание 5: создала скрипт оболочки Grinina1.sh
+#Задание 6: связала аккаунт на GitHub с Replit
 
