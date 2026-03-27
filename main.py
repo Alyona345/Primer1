@@ -130,9 +130,9 @@ import matplotlib.pyplot as plt
 #Расчёт порога блокировки
 R, T, N = symbols("R T N")
 
-BASE_RPS = 100
+BASE_RPS = 120
 WINDOW = 60
-IPS_COUNT = 50
+IPS_COUNT = 40
 
 threshold_expr = (R * T) / N
 THRESHOLD = float(threshold_expr.subs({R: BASE_RPS, T: WINDOW, N: IPS_COUNT}))
@@ -140,12 +140,12 @@ print(f"Порог блокировки: {THRESHOLD:.0f} запросов за {
 
 #IP-адреса и количество запросов
 ip_addresses = [
-    "192.168.1.10",
+    "192.165.1.10",
     "192.168.1.11",
     "10.0.0.5",
     "192.168.1.12",
     "172.16.0.3",
-    "192.168.1.13",
+    "192.165.1.13",
     "10.0.0.15",
     "192.168.1.14",
     "192.168.1.15",
@@ -153,16 +153,16 @@ ip_addresses = [
 ]
 
 requests_per_ip = [
-    47,  
+    183,  
     60,   
-    124,  
+    190,  
     60,   
-    150,  
+    187,  
     49,   
-    173,   
+    203,   
     39,   
-    35,   
-    134   
+    60,   
+    198   
 ]
 
 blocked_status = []
